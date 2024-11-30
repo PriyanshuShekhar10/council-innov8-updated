@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(215, 74%, 8%);
+    flex-direction: column;
+
+    gap: 30px;
+
+    color: white;
+    
+}
+
+.login{
+    
+    color: black;
+    min-height: 50vh;
+    min-width: 20vw;
+    background-color: rgb(215, 215, 215);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+    h1{
+        font-size: 30px;
+    }
+}
+
+.title{
+    margin-bottom: 50px;
+    
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.email, .password{
+        display: flex;
+            flex-direction: column;
+            gap: 5px
+}
+
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+        border: 1px solid black;
+        border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(151, 151, 151, 0.94);
+}
+/* CSS */
+.button-47 {
+
+    align-items: center;
+    background: #FFFFFF;
+    border: 0 solid #E2E8F0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    color: #1A202C;
+    display: inline-flex;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 56px;
+    justify-content: center;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    padding: 24px;
+    text-decoration: none;
+    width: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 30px 0;
+}
+
+
+.new-amsterdam-regular {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+.monospace-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    /* Make the text bold */
+
+    /* Set the text color */
+
+}

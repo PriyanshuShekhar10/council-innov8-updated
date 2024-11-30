@@ -1,0 +1,38 @@
+/* Container */
+.cinemaContainer {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Title Styling */
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #007bff;
+}
+
+/* Iframe Container */
+.iframeContainer {
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.iframeContainer:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}

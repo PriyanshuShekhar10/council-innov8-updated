@@ -1,0 +1,107 @@
+.navbar {
+    height: 3rem;
+    background-color: white;
+    color: #001F3F;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.navbar-logo {
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.75rem; /* Increase font size for visibility */
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.full-text {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.short-text {
+    display: flex;
+    gap: 0.05rem; /* Reduce gap to bring letters closer */
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.short-text span {
+    position: relative;
+    opacity: 0;
+}
+
+/* Target only the non-"Satya" text to vanish */
+.full-text .rest {
+    animation: vanish 3.5s ease forwards; /* Increase vanish duration */
+}
+
+.full-text .s,
+.full-text .a,
+.full-text .t,
+.full-text .y,
+.full-text .last-a {
+    animation: moveToSatya 3.5s ease forwards; /* Increase move duration */
+}
+
+/* Vanish animation */
+@keyframes vanish {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Animate "Satya" letters to their final positions */
+@keyframes moveToSatya {
+    0% { transform: translate(0, 0); opacity: 1; }
+    100% { transform: translate(0, 0); opacity: 1; }
+}
+
+.full-text .s { animation: moveS 3.5s ease forwards, fadeIn 0.5s 3.5s ease forwards; }
+.full-text .a { animation: moveA 3.5s ease forwards, fadeIn 0.5s 3.6s ease forwards; }
+.full-text .t { animation: moveT 3.5s ease forwards, fadeIn 0.5s 3.7s ease forwards; }
+.full-text .y { animation: moveY 3.5s ease forwards, fadeIn 0.5s 3.8s ease forwards; }
+.full-text .last-a { animation: moveLastA 3.5s ease forwards, fadeIn 0.5s 3.9s ease forwards; }
+
+/* Position adjustments to bring letters closer */
+@keyframes moveS {
+    0% { transform: translate(0, 0); opacity: 1; }
+    100% { transform: translate(0, 0); opacity: 1; }
+}
+
+@keyframes moveA {
+    0% { transform: translate(0, 0); opacity: 1; }
+    100% { transform: translate(-56px, 0); opacity: 1; } /* Reduce spacing */
+}
+
+@keyframes moveT {
+    0% { transform: translate(0, 0); opacity: 1; }
+    100% { transform: translate(-200px, 0); opacity: 1; } /* Reduce spacing */
+}
+
+@keyframes moveY {
+    0% { transform: translate(0, 0); opacity: 1; }
+    100% { transform: translate(-297px, 0); opacity: 1; } /* Reduce spacing */
+}
+
+@keyframes moveLastA {
+    0% { transform: translate(0, 0); opacity: 1; }
+    100% { transform: translate(-340px, 0); opacity: 1; } /* Reduce spacing */
+}
+
+/* Fade in short-text letters at the end */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

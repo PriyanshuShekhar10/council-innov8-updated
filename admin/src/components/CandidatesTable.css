@@ -1,0 +1,23 @@
+.table-container {
+    margin: 20px;
+    overflow-x: auto;
+  }
+  
+  .candidates-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .candidates-table th, .candidates-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .candidates-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #001F3F;
+    color: black;
+  }
+  

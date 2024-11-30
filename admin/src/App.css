@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    margin-left: 50px; /* Default margin when the sidebar is collapsed */
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.sidebar {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #001F3F;
+    height: 100vh; /* Set the sidebar to take the full height of the viewport */
+    color: white;
+    width: 50px; /* Default width when the sidebar is collapsed */
+    position: fixed; /* Keep the sidebar fixed on the left side */
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Ensure the sidebar stays above other content */
+}
+
+.sidebar.expanded {
+    width: 300px; /* Width when the sidebar is expanded */
+}
+
+.main.expanded {
+    margin-left: 300px; /* Shift content to the right when the sidebar is expanded */
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 25px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.bars {
+    font-size: 25px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.link {
+    display: flex;
+    color: white;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+    align-items: center;
+    margin: 20px 0; /* Increased vertical spacing between links */
+}
+
+.link .items {
+    font-size: 25px; /* Increase icon size */
+}
+
+.link:hover {
+    background-color: hsl(214, 100%, 27%);
+    transition: all 0.5s;
+}
+
+.active {
+    background: hsl(214, 100%, 27%);
+}
+
+.link_text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar.collapsed .link_text {
+    opacity: 0; /* Hide the text when the sidebar is collapsed */
+}
+
+.sidebar.collapsed .logo {
+    opacity: 0; /* Hide the logo when the sidebar is collapsed */
+}
+
+
